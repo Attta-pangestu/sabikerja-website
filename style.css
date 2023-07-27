@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+
+}
+
+:root {
+
+    /* ==== Color Variabel ===== */
+    --color-white : #ffff ;
+    --color-primer : #BE0101 ; 
+    --color-dark : #202124; 
+    --color-sekunder : #f1ebe6ba ;
+
+    /* ==== Transition Variable ==== */
+    --transition : all 300ms ease ; 
+
+
+    /* ==== asset ==== */
+    --bg-hero : "./gambar/hero_1.jpg"; 
+}
+
+
+body {
+    font-family: 'Jost', sans-serif; 
+    overflow-x: hidden;
+    
+   
+}
+
+
+/* ===== Style Bagian Navbar === */
+
+
+header .navbarBox {
+    background: var(--color-white);
+    width: 100%;
+    
+}
+
+.navbarBox .nav-item a.nav-link:hover {
+    color: var(--color-primer);
+}
+
+
+/*============= Bgaian SearchBox ======  */
+
+.searchForm {
+    flex: 2;
+}
+
+.searchBox.form-control {
+    padding:  0.5rem 0.5rem 0.5rem 0.2rem ;
+    margin-right:0.5rem ;
+    width: 100%;
+}
+
+.searchForm  .btnSearch {
+   width: 70%;
+   
+   
+}
+
+
+/* ===== Bagian Kanan Navbar ====== */
+
+
+
+/*===== Bagian Hero ====== */
+
+/* ===== Bagian style bg overlay===== */
+section.heroBg {
+    background-image: url("./gambar/hero_1.jpg");
+    height: 100vh;
+    width: 100vw;
+    min-height: 900px;
+    display: block;
+    position: relative;
+}
+
+section.heroBg::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* ==== Bagian Hero Content  ===== */
+
+/* ====== Bagian Pembungkus Hero Content ==== */
+.heroBg > .heroBox {
+    z-index: 2;
+    position: relative;
+    max-width: 1140px;
+    height: 80%;
+    margin: auto;
+}
+
+.heroBox > .heroContent {
+    height: 100vh;
+    min-height: 900px;
+
+}
+
+/* === Bagian Form ==== */
+.formHero > .btnHero {
+    padding: 0.5rem 2rem;
+}
+
+/* ===== Bagian Trending Keyword ==== */
+.row > .trendingBox > h3 {
+    font-size: 1.2em;
+}
+
+
+.row > .trendingBox ul li {
+   display: inline-block;
+}
+
+.row > .trendingBox > ul li a {
+    color: var(--color-white);
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+}
+
+/* ==== scroll ke bawah ===== */
+
+.heroBg > .scrollBtn {
+    z-index: 20;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    border-radius: 50%;
+    background: var(--color-primer);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroBg > .scrollBtn  i::before {
+    z-index: 30;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+}
+/* ===== Bagian Banner Counter === */
+.bannerBg {
+    position: relative;
+    z-index: 2;
+    background-image: url(./gambar/hero_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.bannerBg::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--color-sekunder);
+    
+}
+
+/* ===== Bagian Counter ====  */
+.counterBox .angka {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--color-primer);
+}
+
+.counterBox  .caption {
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+}
+
+
+/* === Bagian Heading Kategori Pekerjaan === */
+
+/* .kategoriBox > .headingBox::before {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    width: 3px;
+    background: var(--color-primer);
+} */
+
+
+.kategoriBox > .headingBox h3 {
+    margin-right: 1rem;
+     border-top: 3px solid var(--color-primer);
+    
+}
+
+/* ===== Bagian Kategori Pekerjaan ==== */
+
+.kategoriBox .jobBox {
+    background: var(--color-white);
+    border-radius: 1rem;
+    padding: 0.7rem ;
+    border:1px solid #202124 ;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 1px #202124;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.jobBox > .jobContent > .iconBox ::before{
+    padding: 0.5rem;
+    font-size: 2.8rem;
+    border-radius: 10%;
+    background: #dca499;
+    color: var(--color-primer);
+}
+
+/* ===== Efek Hover ===== */
+.kategoriBox .jobBox:hover  {
+    box-shadow: 0px 0px 3px 3px rgb(104, 102, 102);
+}
+
+.jobBox:hover > .jobContent > .iconBox ::before {
+    background: #ef4928;
+    color: #fff;
+}
+
+.batas {
+    border:1px solid #202124 ;
+    box-shadow: 0px 0px 3px 1px #202124;
+}
+
+/* =========================== Bagian Section List Job ============== */
+
+.listSect ul.listBox li.itemJob {
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* ==== Efek Hover ===== */
+.listSect ul.listBox li.itemJob::before {
+    content: "";
+    position: absolute;
+    top: -10% ; 
+    height: 110%;
+    width: 0.8rem;
+    background: transparent;
+    transition: var(--transition);
+    
+    
+}
+
+.listSect ul.listBox li.itemJob:hover::before {
+    background: linear-gradient(90deg,rgba(239,73,40,1) 0%, transparent 97% );
+}
+
+ul.listBox li.itemJob .listLogo {
+    border-right: 1px solid #eee;
+    height: 6rem;
+    width: 25% ; 
+    display: flex;
+    align-items: center;
+}
+
+.listLoc {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 570px) {
+    ul.listBox li.itemJob .listLogo {
+        width: 100% ; 
+    }
+    .listLoc {
+        width: 100%;
+    }
+}
+
+
+
+ul.listBox li.itemJob .listLogo img {
+    width:100% ;
+    max-width: 200px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+li.itemJob .listInfoBox .listType .badgeJob {
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem ;
+}
+
+/* ====== Jenis Badge Job ===== */
+
+.fullTime {
+    background: var(--color-primer);
+}
+
+.partTime {
+    background: rgb(55, 6, 190);
+}
+
+.contract {
+    background: orange;
+}
+
+
+/* ====== Bagian Paginasi ==== */
+
+.paginationBox a {
+    color: var(--color-primer);
+    font-weight: 600;
+    margin: 0 .3rem;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 20%;
+    border: 2px solid var(--color-primer);
+
+}
+
+
+/* ======= Bagian Testimoni ==== */
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+
+/* ===== Bagian Box Testimoni */
+.cardBox {
+    background: url("./gambar/background.png");
+    border-radius: 2rem;
+}
+
+
+  /* === Bagian Isi Testimoni =====*/
+
+  .card {
+    box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
+    transition: 0.8s;
+    background: #333;;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px !important;
+
+}
+
+.card-header,
+.card-footer {
+    border-radius: 7px !important;
+}
+
+.card:after {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    z-index: 9999;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card-title img{
+    z-index: 99999 !important;
+}
+.card .layer {
+    position: absolute;
+    top: calc(100% - 5px);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5);
+}
+
+
+.card:hover hr {
+    background-color: #fff;
+
+}
+
+
+.card:hover .layer {
+    top: 0;
+}
+
+.card .content {
+    position: relative;
+    z-index: 2;
+}
+
+.card .content .img-1 {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white !important;
+
+}
+
+.card h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+hr {
+    background-color: rgb(117, 117, 117);
+    width: 80% !important;
+    transition: 1s;
+}
+
+
+.bold {
+    font-weight: 500;
+}
+
+#quotes{
+    opacity: 0.1;
+    filter: alpha(opacity=40);
+}
+
+
+@media (max-width: 479px) {
+    p {
+        padding: 0 !important;
+    }
+
+    .img-1{
+        margin-right: 0 !important;
+    }
+
+}
+
+/* ==== Bagian Footer ==== */
+/* footer {
+     ;
+} */
+
+.cardCompany {
+    padding: 1rem;
+    border-radius: 0.8rem ;
+    border-radius: 1px solid gray;
+    background: white;
+    
+    
+}
+
+
+ /* ========================= Style Halaman About Us ==============  */
+
+ .aboutSect {
+    padding: 5em 0;
+ }
+
+.orange {
+    color: #ef4928;
+}
+
+
+/* Bagian Why Us */
+
+.whyBox {
+    box-shadow: -4px 7px 21px -8px rgba(0,0,0,0.5);
+    border-radius: 2rem;
+}
+
+.whyBox  .iconBox  i::before {
+    font-size: 3.5rem;
+    
+}
+
+/* ===== Bagian Testimonial ===== */
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  

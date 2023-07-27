@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sabi Kerja</title>
+    <!-- Link CSS Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link CDN Iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Link File Internal CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>About Sabikerja</title>
+</head>
+<body>
+    <header>
+        <nav class="navbarBox navbar navbar-expand-lg z-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./gambar/logo_sabikerja.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Find Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active"" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                
+                </ul>
+
+                <form class="searchForm d-flex" role="search">
+                  <input class="searchBox form-control " type="search" placeholder="Type Jobs Here" aria-label="Search">
+                  <button class="btnSearch btn btn-outline-success  " type="submit">Search Jobs</button>
+                </form>
+
+                <ul class="bagKanan navbar-nav m-left-2 mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a href="#" class="nav-link">
+                      <button class="btn btn-success btn-md">Sign In/ Sign Up</button>
+                      <button class="btn btn-danger btn-md">Add Job</button>
+                    </a>
+                  </li>
+                  <li class="nav-item avatar">
+                    <div class="rounded-circle overflow-hidden">
+                      <img src="https://img.freepik.com/free-icon/user_318-159711.jpg" width="50" height="50" class="img-fluid img-thumbnail" alt="user profil">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- ===== Bagian Banner ====== -->
+    <section class="banner" >
+        <div class="d-flex container-fluid" lc-helper="background" style="height:50vh;background:url(./gambar/hero_1.jpg)  center / cover no-repeat;">
+        </div>
+        <div class="container p-5 bg-light rounded-5" style="margin-top:-100px">
+            <div class="row">
+                <div class="col-12">
+                    <div class="lc-block ">
+                        <div editable="rich">
+                            <h1 class="display-6 fw-bold text-center ">We're reimagining how Startups and Small businesses
+                                have difficulties getting great talent for the growth
+                                of their business.</h1>
+                        </div>
+                    </div><!-- /lc-block -->
+                </div><!-- /col -->
+            </div>
+            <div class="row">
+                <!-- Gallery -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img
+                        src="./gambar/gallery-1.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                    />
+                
+                    <img
+                        src="./gambar/gallery-2.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape"
+                    />
+                    </div>
+                
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                        src="./gambar/gallery-3.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds"
+                    />
+                
+                    <img
+                        src="./gambar/gallery-3.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                    />
+                    </div>
+                
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                        src="./gambar/gallery-4.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea"
+                    />
+                
+                    <img
+                        src="./gambar/gallery-5.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park"
+                    />
+                    </div>
+                </div>
+                <!-- Gallery -->
+            </div>
+        </div>
+        
+    </section>
+
+    <!--==== Section Image Gallery  ===== -->
+
+
+    <!-- ======= Bagian Banner Angka ====== -->
+
+    <!-- ==== Bagian Banner Angka ==== -->
+    <section class=" bannerBg py-5 mt-5 rounded-2  ">
+        <div class="container position-relative z-3">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center w-100">
+              <strong  class="text-dark mb-2 fw-bold display-6 ">Take <span class="text-danger">Your Talent</span> Acquisition To The Next Level!</strong>
+              <p class="text-dark">Over 10,000 interactions, and so many success stories Make yours now.</p>
+            </div>
+          </div>
+  
+          
+          <div class="counterBox row pb-0 text-center position-relative z-3 ">
+            <!-- Bagian counter 1 -->
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <strong class="angka" data-angka="10">10 </strong> <strong class="angka mx-1"> Minutes</strong> 
+              </div>
+              <span class="caption text-dark">To find a good candidate</span>
+            </div>
+            <!-- Bagian counter 1 -->
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <strong class="angka" data-angka="10">1500</strong> <strong class="angka mx-1"> ++</strong> 
+              </div>
+              <span class="caption text-dark">Talent Already</span>
+            </div>
+            <!-- Bagian counter 1 -->
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <strong class="angka" data-angka="10">35 </strong> <strong class="angka mx-1"> ++</strong> 
+              </div>
+              <span class="caption text-dark">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================== Bagian About Sabikerja  ========================  -->
+      <section class="aboutSect cardBox py-5  rounded-5 m-3">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center ">
+                    <h2 class="mb-3 display-4 text-danger fw-bold">About SabiKerja</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-3">
+                    <figure class="">
+                        <img src="./gambar/gallery-6.jpg" class="img-fluid" >
+                    </figure>
+                </div>
+                
+                <div class="col-lg-6 ml-auto">
+                    <div class="mb-4">
+                        <h3 class=" text-dark fw-bold">SabiKerja is a one-stop solution for talent’s needs.</h3>
+                    </div>
+                    <div>
+                        <p s>We are a headhunter and talent solutions provider that provides ideal talent to the company because we believe that a great company begins with great people who develop and grow together.
+                            At SabiKerja, we value our service-level agreement between talent and company in order to provide fast and high-quality services.
+                            
+                            We began in a pandemic situation in 2021 due to a severe experience with Employment agencies, and we aim to provide a better solution and experience to all of the companies we assist.
+                            
+                            SabiKerja? SabiLah!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+      <!-- ======================== Bagian About Sabikerja  ========================  -->
+
+
+      <!-- ======================== Bagian Why Sabikerja  ========================  -->
+      <section class="mb-4 ">
+
+        <div class="container  mx-3  ">
+            <div class="row">
+                <div class="col-12 py-4 ">
+                    <h3 class="fw-bold display-5 text-center mb-3 "><span class="orange">We Help</span> You <span class="orange">Solve</span> These <span class="orange">Problem</span></h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- ===== Box 1 ====== -->
+                <div class="col-lg-4 col-12 col-md-4 py-2 px-3 whyBox">
+                    <div class="text-center mb-2 iconBox ">
+                        <i class="uil uil-bag orange "></i>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">End-To-End Hiring Assistant</h3>
+                    </div>
+                    <div class="text-center px-3">
+                        <p class="text-secondary">Optimize the Hiring process with comprehensive talanet experience with tight screening process</p>
+                    </div>
+                </div>
+                <!-- ===== Box 1 ====== -->
+
+                <!-- ===== Box 2 ====== -->
+                <div class="col-lg-4 col-12 col-md-4 py-2 px-3 whyBox">
+                    <div class="text-center mb-2 iconBox ">
+                        <i class="uil uil-coins orange"></i>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">Affordable Service Fee</h3>
+                    </div>
+                    <div class="text-center px-3">
+                        <p class="text-secondary">Our fee is custom-made based on your yearly headcount and team member needed</p>
+                    </div>
+                </div>
+                <!-- ===== Box 2 ====== -->
+
+                <!-- ===== Box 3 ====== -->
+                <div class="col-lg-4 col-12 col-md-4 py-2 px-3 whyBox">
+                    <div class="text-center mb-2 iconBox ">
+                        <i class="uil uil-users-alt orange"></i>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">Employer Branding Consultation</h3>
+                    </div>
+                    <div class="text-center px-3">
+                        <p class="text-secondary">Feels like your closing rate was not good? Let's discuss the EB side to strengthen the recruitment process</p>
+                    </div>
+                </div>
+                <!-- ===== Box 3 ====== -->
+
+            </div>
+        </div>
+      </section>
+      <!-- ======================== Bagian Why Sabikerja  ========================  -->
+
+
+      <!-- ======================== Bagian Testimonial Sabikerja  ========================  -->
+
+      <section class="my-4 cardBox py-3">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="mb-3 display-5  text-danger fw-bold text-center">Testimonials From Our Customers</h3>
+           
+          </div>
+        </div>
+      
+        <div class="row text-center d-flex align-items-stretch pb-4 px-3">
+          <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background: url(./gambar/gallery-2.jpg);"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://sabikerja.com/wp-content/uploads/2023/02/Foto-web-1.png"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">-HR Client-</h4>
+                <hr />
+                <p class="text-white fw-bolder mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>SabiKerja memberikan service yang sangat membantu mulai dari awal hingga akhir. 
+                  Komunikasi yang baik dan menyenangkan memberikan experience recruitment yang menyenangkan dan memudahkan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background: url(./gambar/gallery-1.jpg);"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://sabikerja.com/wp-content/uploads/wp-job-board-pro-uploads/_candidate_featured_image/2022/12/1545622693871.jpg"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">-Candidate Vue FrontEnd-</h4>
+                <hr />
+                <p class="text-white fw-bolder mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>Terima kasih SabiKerja yang sangat membantu proses recruitment saya hingga akhirnya bisa onboard di 
+                  perusahaan ini. It's been a pleasure and a very fast also interesting experience with SabiKerja. Thankyou SabiKerja!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background: url(./gambar/gallery-1.jpg);"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://sabikerja.com/wp-content/uploads/2023/02/Foto-web2.png"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">-Owner of a Tech Company-</h4>
+                <hr />
+                <p class="text-white fw-bolder mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>SabiKerja memberikan pengalaman recruitment yang sangat menyenangkan bagi tim kami, 
+                  selain dari kandidat yang diberikan sangat berkualitas, respon dan summary yang diberikan juga sangat membantu. 
+                  Tim kami pun turut terbantu dengan psychological tes yang diberikan. Thankyou SabKerja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================== Bagian Testimonial Sabikerja  ========================  -->
+
+
+      <!-- ======================== Bagian Service Sabikerja  ========================  -->
+
+
+
+       <!-- ======================== Bagian Service Sabikerja  ========================  -->
+
+
+      
+
+
+       <!-- ===================== Footer =============================r -->
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+  
+    <div class="container py-4  m-0">
+     
+      <div class="row px-3">
+        <div class="col-4 d-flex ">
+          <div class="cardCompany align-items-center ">
+            <img src="./gambar/logo_sabikerja.png" class="" height="80">
+            <div class="text-start">
+              <h3 class="text-dark text-start d-inline-block">Call us  : </h3> 
+              <strong class="text-danger text-start">+62 857-3511-3752</strong>
+              <p class="text-secondary">Gedung Wirausaha Lantai 1 Unit 104
+                Jalan Haji R. Rasuna Said Kavling C5, RT.3/RW.1, Karet, Kecamatan Setiabudi, Daerah Khusus Ibukota Jakarta 12920
+              </p>
+              <p class="text-secondary">hello@sabikerja.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-8">
+          <!-- Section Sosial Media -->
+          <section class="mb-4">
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating cardIcon" href="https://www.linkedin.com/company/mitra-cahaya-inovasi/" role="button">
+              <i class="uil uil-linkedin fs-2"></i>
+            </a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating " href="https://www.instagram.com/sabikerja/" role="button">
+              <i class="uil uil-instagram fs-2"></i>
+            </a>
+      
+            <!-- Whatsapp -->
+            <a class="btn btn-outline-light btn-floating " href="http://wa.me/+6285735113752?text=Halo%20SabiKerja%20Saya%20mau%20tau%20tentang" role="button">
+              <i class="uil uil-whatsapp fs-2"></i>
+            </a>
+      
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating " href="https://www.facebook.com/profile.php?id=100076229206843" role="button">
+              <i class="uil uil-facebook-f fs-2"></i>
+            </a>
+            
+          </section>
+          <!-- Section: Social media -->
+      
+          <!-- Section: Form -->
+          <section class="">
+            <form action="">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+      
+      
+          <!-- Section: Links s -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Link For Candidates -->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">For Candidates</h5>
+      
+                <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Browse Jobs</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Browse Candidates</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Candidate Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Job Alert</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">My Bookmarks</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+              <!-- Link For Candidates -->
+  
+              <!-- Link For Employers -->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">For Employers</h5>
+      
+                <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">All Employers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Employer Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Job Packages</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <!--Grid column-->
+              <!-- Link For Employers -->
+  
+              <!-- Link For  About Us-->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">About Us </h5>
+      
+                <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Terms</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Packages</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+              <!-- Link For Candidates -->
+  
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.377204564588!2d106.82854107407888!3d-6.213882993774033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4088c56757d%3A0x253f935e5b0a44fd!2sGedung%20Wirausaha!5e0!3m2!1sid!2sid!4v1690450792562!5m2!1sid!2sid" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+      
+             
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+      </div>
+      
+      
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright :
+      <a class="text-white" href="https://mdbootstrap.com/">Sabikerja.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    
+
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./index.js"></script> 
+</body>
+</html>
