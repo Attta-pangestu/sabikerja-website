@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs | SabiKerja </title>
+    <!-- Link CSS Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link CDN Iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Link File Internal CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ===================== Header ================== -->
+    <header>
+        <nav class="navbarBox navbar navbar-expand-lg z-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./gambar/logo_sabikerja.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./findJobs.html">Find Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./contact.html">Contact Us</a>
+                  </li>
+                
+                </ul>
+
+                <form class="searchForm d-flex" role="search">
+                  <input class="searchBox form-control " type="search" placeholder="Type Jobs Here" aria-label="Search">
+                  <button class="btnSearch btn btn-outline-success  " type="submit">Search Jobs</button>
+                </form>
+
+                <ul class="bagKanan navbar-nav m-left-2 mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a href="#" class="nav-link">
+                      <button class="btn btn-success btn-md">Sign In/ Sign Up</button>
+                      <button class="btn btn-danger btn-md">Add Job</button>
+                    </a>
+                  </li>
+                  <li class="nav-item avatar">
+                    <div class="rounded-circle overflow-hidden">
+                      <img src="https://img.freepik.com/free-icon/user_318-159711.jpg" width="50" height="50" class="img-fluid img-thumbnail" alt="user profil">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+   
+    <!-- ===================== Header =============================r -->
+    
+    <!-- ============== Bagian Hero =================== -->
+    <!-- === Pembungkus Hero ===== -->
+    <section class="heroBg " >
+      <!-- ==== Pembungkus Hero Content === -->
+      <div class="heroBox">
+        <!-- ==== Heading 1 ==== -->
+        <div class="heroContent row d-flex justify-content-center align-content-center  ">
+          <div class="col-md-12 ">
+            <!-- ==== Pembungkus Heading ==== -->
+            <div class="text-center mb-5">
+              <h1 class="text-white">There Are Hundreds Jobs Here Waiting For you!</h1>
+              <p class="text-white">Find Jobs, Employment & Career Opportunities</p>
+            </div>
+
+            <!-- ==== Baris Form ===== -->
+            <form action="#" method="post" class="formHero">
+              <div class="row mb-5">
+                <!-- Input Job, title, company -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <input type="text" class="form-control form-control-lg" placeholder="Job,Title,Company...">
+                </div>
+                <!-- Input Select Region  -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Select Region..</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                    <option value="Sumatera Utara">Sumatera Utara</option>
+                    <option value="Sumatera Selatan">Sumatera Selatan</option>
+                    <option value="Kalimantan Timur">Kalimantan Timur</option>
+                    <option value="Riau">Riau</option>
+                  </select>
+                </div>
+
+                <!-- Input Select Job Type -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <input list="jobType" name="jobType" class="form-control form-control-lg" placeholder="Job Type...">
+                      <datalist id="jobType">
+                        <option value="Part Time">
+                        <option value="Fulltime">
+                        <option value="Freelance">
+                        <option value="Contract">
+                      </datalist>
+                </div>
+
+                <!-- Tombol Submit -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <button type="submit" class="btnHero btn  btn-lg btn-danger text-white w-100 ">
+                    <i class="uil uil-search "></i> Search Job
+                  </button>
+                  
+                </div>
+                
+
+
+              </div>
+            </form>
+            <!-- ==== Baris Trending Keyword ==== -->
+            <div class="row">
+              <div class="col-md-12 trendingBox">
+                <h3 class="d-inline-block text-white">Trending Job : </h3>
+                <ul class="keyword list-unstyled d-inline-block">
+                  <li><a href="#">UI Designer</a></li>
+                  <li><a href="#">Frontend</a></li>
+                  <li><a href="#">Backend</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+       <!-- ==== Bagian Scroll ==== -->
+    <a href="#popular" class="scrollBtn ">
+      <i class="uil uil-arrow-down text-white text-center"></i>
+    </a>
+    </section>
+    <!-- ================= Akhir Dari Hero =============== -->
+
+    <!-- ============ Awal Job Listed =============== -->
+    <!-- Section Job listed -->
+    <section class="listSect p-lg-4 p-0 p-sm-2 p-md-3  position-relative ">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="text-dark">43.422 Job Listed</h2>
+          </div>
+        </div>
+
+        <!-- === Bagian Job Listing ==== -->
+         <!-- === Bagian Job Listing ==== -->
+         <ul class="listBox p-0">
+          <!-- List Job 1 -->
+          <li class="itemJob d-block d-sm-flex  align-items-center batas" href="./singleJobs.html">
+            <div class="listLogo ">
+              <img src="./gambar/logo_sabikerja.png" >
+            </div>
+            <div class="listInfoBox w-100 d-sm-flex justify-content-between mx-4">
+              <div class="listPosition w-50 mb-lg-3 mb-sm-0">
+                <h3 class="fw-normal">Product Designer</h3>
+                <strong class="text-secondary fw-medium ">Sabikerja</strong>
+              </div>
+              <div class="listLoc mb-lg-3 mb-sm-0 ">
+                <i class="uil uil-location-point text-secondary"></i>
+                North Jakarta
+              </div>
+
+              <div class="listType my-3  my-3 d-flex  flex-column">
+                <span class="badgeJob fullTime">Full Time</span>
+                <a href="./singleJobs.html" class="text-decoration-none badgeJob bg-success p-2 mt-2">
+                  <span  style="cursor: pointer;">Detail Jobs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          
+          <!-- List Job 2 -->
+          <li class="itemJob d-block d-sm-flex  align-items-center batas">
+            <a href="#"></a>
+            <div class="listLogo ">
+              <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.s3.amazonaws.com/company-logo/dbea1d5ea51fbc4f26528a218270c70a.png" >
+            </div>
+            <div class="listInfoBox w-100 d-sm-flex justify-content-between mx-4">
+              <div class="listPosition w-50 mb-lg-3 mb-sm-0">
+                <h3 class="fw-normal">Frontend Developer</h3>
+                <strong class="text-secondary fw-medium ">PT Ega Tekelindo Prima</strong>
+              </div>
+              <div class="listLoc mb-lg-3 mb-sm-0 ">
+                <i class="uil uil-location-point text-secondary"></i>
+                 Bogor
+              </div>
+
+              <div class="listType my-3 d-flex flex-column">
+                <span class="badgeJob partTime">Part Time</span>
+                <a href="./singleJobs.html" class="text-decoration-none badgeJob bg-success p-2 mt-2">
+                  <span  style="cursor: pointer;">Detail Jobs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+           <!-- List Job 3 -->
+           <li class="itemJob d-block d-sm-flex  align-items-center batas">
+            <a href="#"></a>
+            <div class="listLogo ">
+              <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.s3.amazonaws.com/company-logo/65df8ab19b8dccfea9c828d61507f071.jpg" >
+            </div>
+            <div class="listInfoBox w-100 d-sm-flex justify-content-between mx-4">
+              <div class="listPosition w-50 mb-lg-3 mb-sm-0">
+                <h3 class="fw-normal">Project Manager</h3>
+                <strong class="text-secondary fw-medium ">Pt Maika Akar Nusantara</strong>
+              </div>
+              <div class="listLoc mb-lg-3 mb-sm-0 ">
+                <i class="uil uil-location-point text-secondary"></i>
+                 Bogor
+              </div>
+
+              <div class="listType my-3  d-flex  flex-column">
+                <span class="badgeJob contract">Contract</span>
+                <a href="./singleJobs.html" class="text-decoration-none badgeJob bg-success p-2 mt-2">
+                  <span  style="cursor: pointer;">Detail Jobs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+           <!-- List Job 4 -->
+           <li class="itemJob d-block d-sm-flex  align-items-center batas">
+            <a href="#"></a>
+            <div class="listLogo ">
+              <img src="https://images.glints.com/unsafe/160x0/glints-dashboard.s3.amazonaws.com/company-logo/65df8ab19b8dccfea9c828d61507f071.jpg" >
+            </div>
+            <div class="listInfoBox w-100 d-sm-flex justify-content-between mx-4">
+              <div class="listPosition w-50 mb-lg-3 mb-sm-0">
+                <h3 class="fw-normal">Project Manager</h3>
+                <strong class="text-secondary fw-medium ">Pt Maika Akar Nusantara</strong>
+              </div>
+              <div class="listLoc mb-lg-3 mb-sm-0 ">
+                <i class="uil uil-location-point text-secondary"></i>
+                 Bogor
+              </div>
+
+              <div class="listType my-3  d-flex  flex-column">
+                <span class="badgeJob contract">Contract</span>
+                <a href="./singleJobs.html" class="text-decoration-none badgeJob bg-success p-2 mt-2">
+                  <span  style="cursor: pointer;">Detail Jobs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- List Job 4 -->
+          <li class="itemJob d-block d-sm-flex  align-items-center batas">
+            <a href="#"></a>
+            <div class="listLogo ">
+              <img src="./gambar/logo_sabikerja.png" >
+            </div>
+            <div class="listInfoBox w-100 d-sm-flex justify-content-between mx-4">
+              <div class="listPosition w-50 mb-lg-3 mb-sm-0">
+                <h3 class="fw-normal">Project Manager</h3>
+                <strong class="text-secondary fw-medium ">Sabikerja</strong>
+              </div>
+              <div class="listLoc mb-lg-3 mb-sm-0 ">
+                <i class="uil uil-location-point text-secondary"></i>
+                North Jakarta
+              </div>
+
+              <div class="listType my-3 d-flex flex-column">
+                <span class="badgeJob fullTime">Full Time</span>
+                <a href="./singleJobs.html" class="text-decoration-none badgeJob bg-success p-2 mt-2">
+                  <span  style="cursor: pointer;">Detail Jobs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- ===== Akhir Job List ===== -->
+        <!-- ===== Akhir Job List ===== -->
+
+        <!-- ==== Bagian Paginasi ====== -->
+        <div class="row pagination">
+          <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+            <span class="text-secondary">Showing 1-5 of 43.422 Jobs</span>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <div class="paginationBox ml-auto">
+              <a href="#" class="prev ">
+                Prev
+              </a>
+              <div class="d-inline-block">
+                <a href="#" class="active ">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </div>
+              <a href="#" class="next">Next</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <!-- ============ Akhir Job Listed =============== -->
+
+
+
+    <!-- ===================== Footer =============================r -->
+    <footer class="bg-dark text-center text-white mt-3 ">
+      <!-- Grid container -->
+    
+      <div class="container py-4  m-0">
+       
+        <div class="row px-3">
+          <div class="col-4 d-flex ">
+            <div class="cardCompany align-items-center ">
+              <img src="./gambar/logo_sabikerja.png" class="" height="80">
+              <div class="text-start">
+                <h3 class="text-dark text-start d-inline-block">Call us  : </h3> 
+                <strong class="text-danger text-start">+62 857-3511-3752</strong>
+                <p class="text-secondary">Gedung Wirausaha Lantai 1 Unit 104
+                  Jalan Haji R. Rasuna Said Kavling C5, RT.3/RW.1, Karet, Kecamatan Setiabudi, Daerah Khusus Ibukota Jakarta 12920
+                </p>
+                <p class="text-secondary">hello@sabikerja.com</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-8">
+            <!-- Section Sosial Media -->
+            <section class="mb-4">
+              <!-- Linkedin -->
+              <a class="btn btn-outline-light btn-floating cardIcon" href="https://www.linkedin.com/company/mitra-cahaya-inovasi/" role="button">
+                <i class="uil uil-linkedin fs-2"></i>
+              </a>
+        
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating " href="https://www.instagram.com/sabikerja/" role="button">
+                <i class="uil uil-instagram fs-2"></i>
+              </a>
+        
+              <!-- Whatsapp -->
+              <a class="btn btn-outline-light btn-floating " href="http://wa.me/+6285735113752?text=Halo%20SabiKerja%20Saya%20mau%20tau%20tentang" role="button">
+                <i class="uil uil-whatsapp fs-2"></i>
+              </a>
+        
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating " href="https://www.facebook.com/profile.php?id=100076229206843" role="button">
+                <i class="uil uil-facebook-f fs-2"></i>
+              </a>
+              
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Form -->
+            <section class="">
+              <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <p class="pt-2">
+                      <strong>Sign up for our newsletter</strong>
+                    </p>
+                  </div>
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="form5Example2" class="form-control" />
+                      <label class="form-label" for="form5Example2">Email address</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                      Subscribe
+                    </button>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </form>
+            </section>
+            <!-- Section: Form -->
+        
+        
+            <!-- Section: Links s -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Link For Candidates -->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">For Candidates</h5>
+        
+                  <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Browse Jobs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Browse Candidates</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Candidate Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Job Alert</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">My Bookmarks</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+                <!-- Link For Candidates -->
+    
+                <!-- Link For Employers -->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">For Employers</h5>
+        
+                  <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">All Employers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Employer Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Job Packages</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <!--Grid column-->
+                <!-- Link For Employers -->
+    
+                <!-- Link For  About Us-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">About Us </h5>
+        
+                  <ul class=" mb-0 list-group list-group-flush list-unstyled ">
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none list-group-item-dark border-bottom">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Terms</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">Packages</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white text-decoration-none list-group-item-dark border-bottom">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+                <!-- Link For Candidates -->
+    
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.377204564588!2d106.82854107407888!3d-6.213882993774033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4088c56757d%3A0x253f935e5b0a44fd!2sGedung%20Wirausaha!5e0!3m2!1sid!2sid!4v1690450792562!5m2!1sid!2sid" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+               
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+          </div>
+        </div>
+        
+        
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright :
+        <a class="text-white" href="https://mdbootstrap.com/">Sabikerja.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+</html>

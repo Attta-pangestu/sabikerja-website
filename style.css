@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    list-style-type: none;
     border: 0;
     box-sizing: border-box;
     outline: 0;
@@ -26,6 +28,8 @@
     /* ==== asset ==== */
     --bg-hero : "./gambar/hero_1.jpg"; 
 }
+
+
 
 
 body {
@@ -64,8 +68,11 @@ header .navbarBox {
 
 .searchForm  .btnSearch {
    width: 70%;
-   
-   
+}
+
+.active {
+    color: var(--color-primer);
+    font-weight: 600;
 }
 
 
@@ -78,12 +85,18 @@ header .navbarBox {
 /* ===== Bagian style bg overlay===== */
 section.heroBg {
     background-image: url("./gambar/hero_1.jpg");
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
-    min-height: 900px;
+    min-height: 700px;
     display: block;
     position: relative;
 }
+
+section.heroJob {
+    height: 30vh !important;
+    min-height: 300px !important;
+}
+
 
 section.heroBg::before{
     content: "";
@@ -108,8 +121,8 @@ section.heroBg::before{
 }
 
 .heroBox > .heroContent {
-    height: 100vh;
-    min-height: 900px;
+    height: 60vh;
+    min-height: 700px;
 
 }
 
@@ -146,7 +159,7 @@ section.heroBg::before{
 .heroBg > .scrollBtn {
     z-index: 20;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 45%;
     border-radius: 50%;
     background: var(--color-primer);
@@ -262,7 +275,6 @@ section.heroBg::before{
 
 .listSect ul.listBox li.itemJob {
     border-radius: 1rem;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
     margin-bottom: 1.5rem;
@@ -354,7 +366,13 @@ li.itemJob .listInfoBox .listType .badgeJob {
     padding: 0.4rem 1rem;
     border-radius: 20%;
     border: 2px solid var(--color-primer);
+    transition: var(--transition);
 
+}
+
+.paginationBox a:hover {
+    background: var(--color-primer);
+    color: white;
 }
 
 
@@ -503,9 +521,7 @@ hr {
 
  /* ========================= Style Halaman About Us ==============  */
 
- .aboutSect {
-    padding: 5em 0;
- }
+
 
 .orange {
     color: #ef4928;
@@ -515,8 +531,9 @@ hr {
 /* Bagian Why Us */
 
 .whyBox {
-    box-shadow: -4px 7px 21px -8px rgba(0,0,0,0.5);
+    box-shadow: 4px 7px 21px 8px rgba(0,0,0,0.5);
     border-radius: 2rem;
+    
 }
 
 .whyBox  .iconBox  i::before {
@@ -540,4 +557,141 @@ hr {
     border-radius: 50%;
   }
 
+/* ====== Bagian Our Clients ======== */
+
+.container {
+    
+    .slider {
+      animation: slidein 30s linear infinite;
+      white-space: nowrap;
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+        .fab {
+          width: calc(100% / 5);
+          animation: fade-in 0.5s 
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
+      }
+    }
+  }
   
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* =============  Bagian Contact Us ======= */
+
+  .contact2 {
+    color: #8d97ad;
+    font-weight: 300;
+      padding: 60px 0;
+    margin-bottom: 170px;
+    background-position: center top;
+  }
+  
+  .contact2 h1,
+  .contact2 h2,
+  .contact2 h3,
+  .contact2 h4,
+  .contact2 h5,
+  .contact2 h6 {
+    color: #3e4555;
+  }
+  
+  .contact2 .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .contact2 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+  }
+  
+  .contact2 .bg-image {
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .contact2 .card.card-shadow {
+      -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+      box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  }
+  
+  .contact2 .detail-box .round-social {
+    margin-top: 100px;
+  }
+  
+  
+
+  .contact2 .contact-container .links a {
+    color: #8d97ad;
+  }
+  
+  .contact2 .contact-container {
+    position: relative;
+    top: 200px;
+  }
+  
+  .contact2 .btn-danger-gradiant {
+    background: #ff4d7e;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  }
+  
+   .contact2 .btn-danger-gradiant:hover {
+    background: #ff6a5b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+  }
+
+
+  .facebook {
+    background: #3b5998;
+  }
+
+  .whatsapp {
+    background: #25D366;
+  }
+
+  .linkedin {
+    background: #0e76a8 ;
+  }
+
+ .bannerContact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgb(84,209,153);
+background: linear-gradient(304deg, rgba(84,209,153,0.9529936974789917) 0%, rgba(62,198,198,0.8941701680672269) 100%);
+ }
